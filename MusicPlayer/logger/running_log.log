@@ -1,0 +1,28 @@
+INFO music  67 当前图片缓存目录: D:\zwPython\test\musicplayer\MusicPlayer\cache
+INFO configDownloadFrameFeatures  86 下载目标变更D:\zwPython\test\musicplayer\MusicPlayer\downloads
+INFO configDownloadFrameFeatures  86 下载目标变更C:\Users\Administrator.VKXFUU7OYI9NGVZ\PycharmProjects\zhongkong\MusicPlayer\downloads
+WARNING base  51 读取或保存cookies出错 文件名: ['cookies/downloadInfo/downloadFolder.cks']
+Traceback (most recent call last):
+  File "D:\zwPython\test\musicplayer\MusicPlayer\widgets\base.py", line 49, in _exec
+    func(*args)
+  File "D:\zwPython\test\musicplayer\MusicPlayer\features\configDownloadFrameFeatures.py", line 212, in loadCookies
+    self._setDownloadFolder(self.myDownloadFolder)
+  File "D:\zwPython\test\musicplayer\MusicPlayer\features\configDownloadFrameFeatures.py", line 87, in _setDownloadFolder
+    self.fromPathLoadSong(folderName)
+  File "D:\zwPython\test\musicplayer\MusicPlayer\features\configDownloadFrameFeatures.py", line 138, in fromPathLoadSong
+    os.mkdir(selectFolder)  # 创建路径
+FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'C:\\Users\\Administrator.VKXFUU7OYI9NGVZ\\PycharmProjects\\zhongkong\\MusicPlayer\\downloads'
+INFO netEaseApi  50 进行网易云Url请求, args: ('http://music.163.com/api/playlist/list?cat=%E5%85%A8%E9%83%A8%E6%AD%8C%E5%8D%95&type=all&order=all&offset=0&total=true&limit=30&index=1',), kwargs: {'method': 'GET', 'cookies': {'appver': '2.1.2.184499', 'os': 'pc', 'channel': 'netease'}}
+ERROR __init__  585 Task exception was never retrieved
+future: <Task finished coro=<setUserData() done, defined at D:\zwPython\test\musicplayer\MusicPlayer\features\configMainFeatures.py:203> exception=KeyError('profile',)>
+Traceback (most recent call last):
+  File "D:\zwPython\test\musicplayer\MusicPlayer\features\configMainFeatures.py", line 205, in setUserData
+    profile = self.loginInfor['profile']
+KeyError: 'profile'
+INFO xiamiApi  55 进行xiami Url请求, args: ('http://api.xiami.com/web?v=2.0&app_key=1&_ksTS=1459927525542_91&page=1&limit=30&callback=jsonp92&r=collect/recommend',), kwargs: {'method': 'GET'}
+INFO qqApi  42 进行QQ Url请求, args: ('https://c.y.qq.com/splcloud/fcgi-bin/fcg_get_diss_by_tag.fcg?rnd=0.5136307078685405&g_tk=5381&jsonpCallback=getPlaylist&loginUin=0&hostUin=0&format=jsonp&inCharset=utf8&outCharset=utf-8&notice=0&platform=yqq&needNewCode=0&categoryId=10000000&sortId=5&sin=30&ein=29',), kwargs: {'method': 'GET', 'headers': {'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Connection': 'keep-alive', 'Pragma': 'no-cache', 'Cache-Control': 'no-cache', 'Accept-Encoding': 'gzip,deflate,sdch', 'Accept-Language': 'zh-CN,zh;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36', 'Host': 'c.y.qq.com', 'Referer': 'https://y.qq.com/portal/playlist.html'}}
+ERROR music  549 got some error
+Traceback (most recent call last):
+  File "D:/zwPython/test/musicplayer/MusicPlayer/music.py", line 547, in start
+    sys.exit(0)
+SystemExit: 0
